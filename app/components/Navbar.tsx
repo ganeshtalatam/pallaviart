@@ -128,13 +128,13 @@ export default function Navbar() {
               aria-label="Toggle menu"
             >
               <div className={`w-6 h-0.5 transition-all duration-300 ${
-                isOpen ? "rotate-45 translate-y-2 bg-brand-contrast" : "bg-white"
+                isOpen ? "rotate-45 translate-y-2 bg-brand-contrast" : solid ? "bg-brand-contrast" : "bg-white"
               }`}></div>
               <div className={`w-6 h-0.5 transition-all duration-300 ${
-                isOpen ? "opacity-0" : "bg-white"
+                isOpen ? "opacity-0" : solid ? "bg-brand-contrast" : "bg-white"
               }`}></div>
               <div className={`w-6 h-0.5 transition-all duration-300 ${
-                isOpen ? "-rotate-45 -translate-y-2 bg-brand-contrast" : "bg-white"
+                isOpen ? "-rotate-45 -translate-y-2 bg-brand-contrast" : solid ? "bg-brand-contrast" : "bg-white"
               }`}></div>
             </button>
           </div>
