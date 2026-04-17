@@ -32,7 +32,7 @@ export default function AboutArtist() {
             
             <div className="space-y-4 text-brand-text/80 leading-relaxed font-light">
               <p>
-                As a dedicated visual artist, I specialize in transforming fleeting emotions into permanent memories. Whether through the refined strokes of a Live Wedding Painting or the playful energy of Glitter Art, my goal is to create art that resonates with your soul.
+                Hi,I am <strong>Pallavi</strong>, a dedicated visual artist specializing in transforming fleeting emotions into permanent memories. Whether through the refined strokes of a Live Wedding Painting or the playful energy of Glitter Art, my goal is to create art that resonates with your soul.
               </p>
               <p>
                 My journey with art is deeply personal, and I bring that intimacy to every piece I create. Serving across India, I travel to your celebrations to document them in a way that photographs simply cannot - with heart, texture, and a touch of artistic magic.
@@ -62,10 +62,5 @@ export default function AboutArtist() {
         </div>
       </div>
     </section>
-
-    //       </div>
-    //     </div>
-    //   </div>
-    // </section>
   );
 }
