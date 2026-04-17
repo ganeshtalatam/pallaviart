@@ -14,8 +14,8 @@ export default function AboutArtist() {
                 fill 
                 className="object-cover"
               />
-              <div className="absolute bottom-2 left-0 right-0 text-center">
-                <span className="font-script text-brand-primary text-2xl">Pallavi</span>
+              <div className="absolute bottom-2 left-0 right-70 text-center">
+                <span className="font-script text-white text-2xl">Pallavi</span>
               </div>
             </div>
             {/* Decorative element */}
