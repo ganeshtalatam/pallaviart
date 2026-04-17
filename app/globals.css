@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: #FCFAF9;
+  --color-brand-contrast: #392A23;
+  --color-brand-accent: #EEDDDC;
+  --color-brand-primary: #9F7E69;
+  --color-brand-text: #4B382A;
+  --color-brand-gold: #D4A373;
+  --color-brand-light: #FBF7F4;
+  
+  --font-serif: var(--font-prata);
+  --font-sans: var(--font-outfit);
+  --font-script: var(--font-cedarville);
+
+  --animate-fade-in-up: fade-in-up 0.8s ease-out forwards;
+  --animate-fade-in: fade-in 1s ease-out forwards;
+  --animate-scale-in: scale-in 0.5s ease-out forwards;
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes scale-in {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes painterly-drift {
+    0% {
+      transform: scale(1.05) translate(0px, 0px) rotate(0deg);
+      filter: brightness(1) saturate(1);
+    }
+    33% {
+      transform: scale(1.18) translate(-1.5%, 1.5%) rotate(1.5deg);
+      filter: brightness(1.1) saturate(1.1);
+    }
+    66% {
+      transform: scale(1.1) translate(1.5%, -1.5%) rotate(-1deg);
+      filter: brightness(0.9) saturate(0.9);
+    }
+    100% {
+      transform: scale(1.05) translate(0px, 0px) rotate(0deg);
+      filter: brightness(1) saturate(1);
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-brand-bg);
+  color: var(--color-brand-text);
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, h5, h6, .font-serif {
+  font-family: var(--font-serif);
+}
+
+.text-gradient-gold {
+  background: linear-gradient(90deg, var(--color-brand-gold), var(--color-brand-primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.polaroid-frame {
+  background: white;
+  padding: 1rem 1rem 3rem 1rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  border-radius: 2px;
+  position: relative;
+}
+
+.polaroid-frame::after {
+  content: '';
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4rem;
+  height: 2rem;
+  /* background: var(--color-brand-accent);
+  opacity: 0.2; */
+}
+
+.font-script {
+  font-family: var(--font-script);
+}
